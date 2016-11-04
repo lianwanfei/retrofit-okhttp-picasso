@@ -14,8 +14,6 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.lian.http.LHttpManager.DEFAULT_TIMEOUT;
-
 /**
  * Created by lianwanfei on 16/11/4.
  */

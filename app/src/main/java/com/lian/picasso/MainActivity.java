@@ -51,5 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 text.setText(model.menu_list.get(0).menu_name);
             }
         });
+
+        LHttpManager.getInstance().showImage(this,"https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1164142772,2550510437&fm=58",image);
+
     }
 }

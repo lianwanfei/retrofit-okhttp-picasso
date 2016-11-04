@@ -1,7 +1,12 @@
 package com.lian.http;
 
 
+import android.content.Context;
+import android.widget.ImageView;
+
 import com.lian.http.retrofit.RetrofitUtils;
+import com.lian.picasso.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,5 +32,8 @@ public class LHttpManager {
         Map queryMap = new HashMap();
         queryMap.put("store_id", store_id);
         retorfitCreater.getByRetrofit(queryMap,callBack);
+    }
+    public void showImage(Context cxt,String url, ImageView imageView){
+        Picasso.with(cxt).load(url).placeholder(R.drawable.ic_launcher).into(imageView);
     }
 }
