@@ -1,4 +1,5 @@
-package com.lian.http.retrofit;
+package com.lian.httpapi;
+
 
 import com.lian.model.LBaseModel;
 
@@ -14,6 +15,9 @@ import retrofit2.http.QueryMap;
 
 public interface RetrofitApi {
 
-    @GET("storeapi/menu_list")
-    Call<LBaseModel> get(@QueryMap Map<String, String> param);
+    @GET("register")
+    Call<LBaseModel> register(@QueryMap Map<String, String> param);
+
+    @GET("login")
+    Call<LBaseModel> login(@QueryMap Map<String, String> param);
 }

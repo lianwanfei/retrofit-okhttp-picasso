@@ -6,8 +6,8 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.lian.http.LHttpCallBack;
-import com.lian.http.LHttpManager;
+import com.lian.httpapi.LHttpCallBack;
+import com.lian.httpapi.LHttpManager;
 import com.lian.model.LBaseModel;
 
 import java.io.IOException;

@@ -6,8 +6,8 @@ import java.util.ArrayList;
  * Created by lianwanfei on 16/11/3.
  */
 public class LBaseModel {
-    public String retcode;
-    public String retmsg;
+    public String status;
+    public String errorMesg;
     public String order_id;
     public String menu_update_time;
 
